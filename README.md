@@ -1,10 +1,19 @@
 # PORTSULA
 Automated Nmap scanner with CVE research link generator.
 
-# 🧭 PORTSULA v1.0
+# 🧭 PORTSULA v2.4 Artık Arayüzlü
 "Siber Güvenlik Yolculuğunda Pusulanız"
 
-PORTSULA, ağ tarama sonuçlarını analiz eden ve tespit edilen servisler için otomatik olarak zafiyet (CVE) araştırma linkleri oluşturan Python tabanlı bir güvenlik aracıdır.
+###  Yeni Özellikler:
+- Canlı Takip: `--stats-every` entegrasyonu sayesinde taramanın yüzde kaçta olduğunu saniye saniye izleyin.
+- Gelişmiş Parametreler: Syn Scan (-sS), Fragment (-f) ve Decoy IP gibi siber güvenlik taktiklerini tek tıkla seçin.
+- Hız Kontrolü: T0'dan T5'e kadar ayarlanabilir tarama hızı.
+- Yenileme Modu: Tek butonla tüm ayarları sıfırlayıp yeni taramaya geçme imkanı.
+
+
+
+
+PORTSULA, ağ tarama sonuçlarını analiz eden ve tespit edilen servisler için otomatik olarak zafiyet (CVE) araştırma linkleri oluşturan Python tabanlı bir IP Port Tarama-Güvenlik aracıdır.
 
  Öne Çıkan Özellikler
  
@@ -12,10 +21,15 @@ PORTSULA, ağ tarama sonuçlarını analiz eden ve tespit edilen servisler için
 - Otomatik CVE Analizi: Bulunan her servis için Google üzerinden saniyeler içinde zafiyet tarama linki hazırlar.
 - Raporlama: Tüm bulguları `Portsula_Rapor.txt` dosyasına kaydederek dokümantasyon sağlar.
 
-##  Nasıl Çalıştırılır?
-1. Kali Linux terminalinizi açın.
-2. `python3 portsula.py` komutunu girin.
-3. Hedef IP veya Domain adresini yazıp taramayı başlatın.
+  
+
+- ### 🛠️ Kurulum ve Çalıştırma
+
+# Gerekli kütüphaneyi kurun (Kali)
+sudo apt install python3-tk
+
+# Uygulamayı başlatın
+python3 portsula_gui.py
 
 ## 👨‍💻 Geliştirici
 Ömer Faruk Güner / Siber Güvenlik Öğrencisi
